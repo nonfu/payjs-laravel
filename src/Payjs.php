@@ -139,6 +139,8 @@ class Payjs
     public function notify()
     {
         $data = request()->all();
+        $type = empty($data['type']) ? 'wechat' : $data['type'];
+        $this->setPayType($type);
         if ($this->checkSign($data) === true) {
             return $data;
         } else {

@@ -4,7 +4,7 @@
 <h2 align="center">PAYJS Wechat Payment Laravel Package</h2>
 
 ## 简介
-本项目是基于 PAYJS 的 API 开发的 Laravel Package，可直接用于生产环境
+本项目是基于 PAYJS 的 API 开发的 Laravel Package，仅做学习参考，不建议用于生产环境
 
 PAYJS 针对个人主体提供微信/支付宝支付接入能力，是经过检验的正规、安全、可靠的微信支付个人开发接口
 
