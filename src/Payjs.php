@@ -1,6 +1,6 @@
 <?php
 
-namespace Xhat\Payjs;
+namespace Nonfu\Payjs;
 
 class Payjs
 {
@@ -21,8 +21,6 @@ class Payjs
 
     public function __construct()
     {
-        $this->mchid = config('payjs.mchid');
-        $this->key   = config('payjs.key');
         $api_url     = config('payjs.api_url');
 
         $this->api_url_native    = $api_url . 'native';
@@ -37,6 +35,12 @@ class Payjs
         $this->api_url_facepay   = $api_url . 'facepay';
         $this->api_url_complaint = $api_url . 'complaint';
         $this->api_url_mweb      = $api_url . 'mweb';
+    }
+
+    public function setPayType($type)
+    {
+        $this->mchid = config('payjs.' . $type . '.mchid');
+        $this->key = config('payjs.' . $type . '.key');
     }
 
     // 扫码支付

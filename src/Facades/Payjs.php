@@ -1,6 +1,6 @@
 <?php
 
-namespace Xhat\Payjs\Facades;
+namespace Nonfu\Payjs\Facades;
 
 use Illuminate\Support\Facades\Facade;
 

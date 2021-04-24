@@ -1,6 +1,6 @@
 <?php
 
-namespace Xhat\Payjs;
+namespace Nonfu\Payjs;
 
 use Illuminate\Support\ServiceProvider;
 

@@ -1,27 +1,27 @@
 {
-    "name": "xhat/payjs-laravel",
+    "name": "nonfu/payjs-laravel",
     "description": "基于 PAYJS 的 API 开发的 Composer Laravel Package，可直接用于生产环境 https://payjs.cn",
     "type": "library",
     "license": "MIT",
     "minimum-stability": "dev",
     "authors": [
         {
-            "name": "xhat",
-            "email": "andy@popfeng.com"
+            "name": "nonfu",
+            "email": "yaojinbu@outlook.com"
         }
     ],
     "autoload": {
         "psr-4": {
-            "Xhat\\Payjs\\": "src/"
+            "Nonfu\\Payjs\\": "src/"
         }
     },
     "extra": {
         "laravel": {
             "providers": [
-                "Xhat\\Payjs\\PayjsServiceProvider"
+                "Nonfu\\Payjs\\PayjsServiceProvider"
             ],
             "aliases": {
-                "Payjs": "Xhat\\Payjs\\Facades\\Payjs"
+                "Payjs": "Nonfu\\Payjs\\Facades\\Payjs"
             }
         }
     }
